@@ -15,6 +15,11 @@ swift "$ROOT_DIR/Scripts/generate-icon.swift" "$ROOT_DIR/dist/AppIcon.iconset"
 rm -rf "$APP_DIR"
 mkdir -p "$MACOS_DIR" "$RESOURCES_DIR"
 
+cp "${ROOT_DIR}/LICENSE" "${ROOT_DIR}/NOTICE" "$RESOURCES_DIR/"
+SOURCE_REF="$(git -C "${ROOT_DIR}" rev-parse HEAD 2>/dev/null || echo main)"
+printf 'Source code: https://github.com/nickdrezza/SwipeKeys/archive/%s.tar.gz\nBuild instructions: https://github.com/nickdrezza/SwipeKeys/blob/%s/README.md\n' \
+    "$SOURCE_REF" "$SOURCE_REF" > "$RESOURCES_DIR/SOURCE.txt"
+
 cp "$ROOT_DIR/.build/release/swipekeys" "$MACOS_DIR/SwipeKeys"
 iconutil -c icns "$ROOT_DIR/dist/AppIcon.iconset" -o "$RESOURCES_DIR/AppIcon.icns"
 rm -rf "$ROOT_DIR/dist/AppIcon.iconset"
