@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">SwipeKeys. Keyboard in. Swipes out.</title>
+  <desc id="desc">Turn keyboard controls into mouse gestures.</desc>
+  <rect width="960" height="300" rx="24" fill="#f2eff8"/>
+  <circle cx="932" cy="8" r="170" fill="#775bb8" opacity="0.06"/>
+  <g font-family="system-ui, sans-serif" fill="#252526">
+    <text x="52" y="105" font-size="44" font-weight="700">SwipeKeys</text>
+    <text x="54" y="156" font-size="23">Keyboard in. Swipes out.</text>
+    <text x="54" y="218" font-size="15" fill="#5b5a60">Turn keyboard controls into mouse gestures.</text>
+  </g>
+  <g fill="#fff" stroke="#d9d0e8" stroke-width="2">
+    <rect x="599" y="82" width="52" height="52" rx="10"/>
+    <rect x="539" y="142" width="52" height="52" rx="10"/>
+    <rect x="599" y="142" width="52" height="52" rx="10"/>
+    <rect x="659" y="142" width="52" height="52" rx="10"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="28" fill="#775bb8" text-anchor="middle">
+    <text x="625" y="119">↑</text><text x="565" y="179">←</text>
+    <text x="625" y="179">↓</text><text x="685" y="179">→</text>
+  </g>
+  <path d="M767 103 V202 M755 118 L767 103 L779 118 M790 154 H878 M863 142 L878 154 L863 166" fill="none" stroke="#775bb8" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="819" cy="201" r="8" fill="#775bb8"/>
+  <text x="815" y="244" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#5b526a">swipe + tap</text>
+</svg>
